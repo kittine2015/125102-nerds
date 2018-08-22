@@ -10,7 +10,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.svg" width="3" height="15" alt="Логотип
+          <img src="img/index-logo.svg" width="300" height="150" alt="Логотип
             «Nerds»">
         </a>
         <ul class="site-navigation">
@@ -19,14 +19,42 @@
           <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul class="basket"> <li>Корзина</li>
+        <ul class="basket"> 
+          <a hrf="basket.html">
+            <li>Корзина</a>
+            </li>
         </ul>
+        <h1 class="page-title">Магазин готовых шаблонов</h1>
       </nav>
     </header>
     <main class="container">
-        <h1 class="page-title">Магазин готовых шаблонов</h1>
-        <section class="filters">
+         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
+            <!-- Сьоимость-->
+            <!-- Сетка
+            <form action="" method="post">
+      <p>СЕТКА</p>
+      <label>
+        <input type="radio" name="question-one" checked>
+        Адаптивная
+      </label><br>
+      <label>
+        <input type="radio" name="question-one">
+        Фиксированная
+      </label>
+      <label>
+        <input type="radio" name="question-one">
+        Резиновая
+      </label><br>
+            -->
+            <form action="" method="POST">
+              <input type="checkbox" name="subscribe" id="subscribe-
+                field" checked>
+                <label for="subscribe-field">Слайдер</label>
+                <input type="checkbox" name="subscribe" id="subscribe-field">
+                <label for="subscribe-field">Блок преимществ</label>
+                <input type="submit" value="Показать">  
+              </form>
             <!-- Здесь будет форма -->
           </section>
          <section class="catalog">
@@ -60,15 +88,14 @@
                 </p>
                <a class="contact-button" href="#">Напишите нам</a>
               </section>
-          </main>
-          <section class="main-social">
+                    <section class="main-social">
               <div class="social">
-                  <h4>Давайте дружить, это выгодно!</h4>
-                  <p>Скидка 10% для друзей из социальных сетей.</p>
                   <a class="social-button" href="#">Вконтакте</a>
                   <a class="social-button" href="#">Фейсбук</a>
                   <a class="social-button" href="#">Инстаграм</a>
                 </div>
+                <h4>Давайте дружить, это выгодно!</h4>
+                  <p>Скидка 10% для друзей из социальных сетей.</p>
                 </section>
           </footer>
         </body>
