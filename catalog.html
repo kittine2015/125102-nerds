@@ -5,8 +5,6 @@
     <title>Нёрдс</title>
   </head>
   <body>
-
-
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -19,84 +17,71 @@
           <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul class="basket"> 
-          <a hrf="basket.html">
-            <li>Корзина</a>
-            </li>
+        <ul class="basket">
+          <li>
+            <a hrf="basket.html">Корзина</a>
+          </li>
         </ul>
         <h1 class="page-title">Магазин готовых шаблонов</h1>
       </nav>
     </header>
     <main class="container">
-         <section class="filters">
-            <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!-- Сьоимость-->
-            <!-- Сетка
-            <form action="" method="post">
-      <p>СЕТКА</p>
-      <label>
-        <input type="radio" name="question-one" checked>
-        Адаптивная
-      </label><br>
-      <label>
-        <input type="radio" name="question-one">
-        Фиксированная
-      </label>
-      <label>
-        <input type="radio" name="question-one">
-        Резиновая
-      </label><br>
-            -->
-            <form action="" method="POST">
-              <input type="checkbox" name="subscribe" id="subscribe-
-                field" checked>
-                <label for="subscribe-field">Слайдер</label>
-                <input type="checkbox" name="subscribe" id="subscribe-field">
-                <label for="subscribe-field">Блок преимществ</label>
-                <input type="submit" value="Показать">  
-              </form>
-            <!-- Здесь будет форма -->
-          </section>
-         <section class="catalog">
-            <ul class="list-of-projects">
-            <li class="project-item">
-              <a class="project link" href="">
-                <img src="" width="220" height="165" alt="Sedona">
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <!-- Здесь будет фильтр товаров -->
+      </section>
+      <section class="catalog">
+        <div class="sort">
+          <!--сортировка каталога-->
+        </div>
+        <ul class="product-list">
+          <li class="product-item">
+            <img class="products-header" src="" alt="">
+            <img class="products-img" src="" alt="">
+            <div class="product-info">
+              <a href="#">
+                <h3 class="product-title">SEDONA</h3>
               </a>
-            </li>
-          </ul>
-          <!-- Здесь будут карточки -->
-          <ul class="pagination-list">
-              <li class="pagination-item-current"><a>1</a></li>
-              <li class="pagination-item"><a href="#">2</a></li>
-              <li class="pagination-item"><a href="#">3</a></li>
-              <li class="pagination-item"><a href="#">Следующая</a></li>
-            </ul>
-        </section>
-        </main>
+              <p class="product-desc">Информационный сайт для туристов</p>
+              <a href="#">9900</a>
+            </div>
+          </li>
+        </ul>
+        <!-- Здесь будут карточки -->
+        <ul class="pagination-list">
+          <li class="pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Следующая</a></li>
+        </ul>
+      </section>
+    </main>
 
-
-        <footer class="main-footer">
-            <section class="contacts">
-                <img src="http://placehold.it/150x100">
-                <h3>NЁRDS DESIGN STUDIO</h3>
-                <p class="contact-adress">
-                  191186, Санкт-Петербург,<br>
-                  ул. Б. Конюшенная, д. 19/8<br>
-                  </p>
-                <p class="contact numers">   Телефон: +7 (812) 666-02-66
-                </p>
-               <a class="contact-button" href="#">Напишите нам</a>
-              </section>
-                    <section class="main-social">
-              <div class="social">
-                  <a class="social-button" href="#">Вконтакте</a>
-                  <a class="social-button" href="#">Фейсбук</a>
-                  <a class="social-button" href="#">Инстаграм</a>
-                </div>
-                <h4>Давайте дружить, это выгодно!</h4>
-                  <p>Скидка 10% для друзей из социальных сетей.</p>
-                </section>
-          </footer>
-        </body>
-      </html>
+    <footer class="main-footer">
+      <section class="map">
+        <img src="map.jpg" alt="">
+        <div class="contacts">
+          <img src="http://placehold.it/150x100">
+          <b>NЁRDS DESIGN STUDIO</b>
+          <p class="contact-adress">
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8<br>
+          </p>
+          <p class="contact numers">Телефон: +7 (812) 275-75-75</p>
+          <a class="contact-button" href="#">Напишите нам</a>
+        </div>
+      </section>
+      <div class="footer-button">
+        <ul class="social-list">
+          <li class="social-item"><a href="#">Вконтакте</a></li>
+          <li class="social-item"><a href="#">Фейсбук</a></li>
+          <li class="social-item"><a href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <div class="wrap-text">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
+  </body>
+</html>
