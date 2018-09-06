@@ -7,17 +7,17 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.svg" width="300" height="150" alt="Логотип
-            «Nerds»">
-        </a>
+          <a class="main-header-logo">
+              <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип
+                «Nerds»">
+            </a>
         <ul class="site-navigation">
           <li><a href="studia.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
           <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul class="basket">
+           <ul class="basket">
           <li>
             <a href="basket.html">Корзина</a>
           </li>
@@ -28,85 +28,154 @@
     <main class="container">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет фильтр товаров -->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+         <fieldset>
+    <legend>СТОИМОСТЬ</legend>
+    <div class="range-filter">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar" style="margin-left: 20%; width: 30%"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
+        </div>
+        <div class="price-controls">
+          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+          <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+        </div>
+      </div>
+   <!-- <label>
+      <input type="range" name="radio">    </label>-->
+          </fieldset>
+          <fieldset>
+            <legend>СЕТКА</legend>
+             <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-radio" type="radio" name="setka-group" value="adapt" id="filter-adapt" checked>
+                <label for="filter-adapt">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                  <input class="visually-hidden filter-radio" type="radio" name="setka-group" value="fixed" id="filter-fixed">
+                  <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                  <input class="visually-hidden filter-radio" type="radio" name="setka-group" value="responsive" id="filter-responsive">
+                  <label for="filter-responsive">Резиновая</label>
+              </li>
+            </ul>
+            </fieldset>
+            <fieldset>
+              <legend>ОСОБЕННОСТИ</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="slider-box" id="filter-slider-box" checked>
+                  <label for="filter-slider-box">Слайдер</label>
+                </li>
+                <li class="filter-option">
+                    <input class="visually-hidden filter-checkbox" type="checkbox" name="benefits-box" id="filter-benefits-box">
+                    <label for="filter-benefits-box">Блок преимуществ</label>
+                  </li>
+                  <li class="filter-option">
+                      <input class="visually-hidden filter-checkbox" type="checkbox" name="news-box" id="filter-news-box" checked>
+                      <label for="filter-news-box">Новости</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-checkbox" type="checkbox" name="gallery-box" id="filter-gallery-box">
+                        <label for="filter-gallery-box">Галерея</label>
+                      </li>
+                      <li class="filter-option">
+                          <input class="visually-hidden filter-checkbox" type="checkbox" name="basket-box" id="filter-basket-box">
+                          <label for="filter-basket-box">Корзина</label>
+                        </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="filter-button">
+              Показать
+            </button>
+        </form>
+       <!-- Здесь будет фильтр товаров demo -->
       </section>
       <section class="catalog">
         <div class="sort">
           <h2 class="sort-title">Сортировать</h2>
           <ul class="sort-list">
             <li class="sort-item">
-              <span class="sort-price">по цене</span>
-              <span class="sort-type">по типу</span>
-              <span class="sort-name">по названию</span>
-              <img src="img/icon-down-dir.svg" width="11" height="10" alt="icon-down">
-              <img src="img/icon-up-dir.svg" width="11" height="10" alt="icon-up">
+              <a href="#">по цене</a>
+               <a href="#">по типу</a>
+                <a href="#">по названию</a>
+              <a href="#">
+                <img src="img/icon-down-dir.svg" width="11" height="10" alt="icon-down">
+              </a>
+              <a href="#">
+                <img src="img/icon-up-dir.svg" width="11" height="10" alt="icon-up">
+              </a>
             </li>
           </ul>
           <!--сортировка каталога-->
         </div>
         <ul class="product-list">
           <li class="product-item">
-            <img class="products-header" src="" width="360" height="40" alt="browser-svg">
-             <div class="product-info">
+            <img class="products-header" src="img/browser.svg" alt="" width="360" height="40">
+            <div class="product-info">
               <a href="#">
                 <h3 class="product-title">SEDONA</h3>
               </a>
-              <img class="products-img" src="img/img-sedona.jpeg" width="360" height="576"alt="SEDONA">
+              <img class="products-img" src="img/img-sedona.jpeg" width="360" height="576" alt="SEDONA">
               <p class="product-desc">Информационный сайт для туристов</p>
               <a href="#">9900</a>
             </div>
           </li>
           <li class="product-item">
-            <img class="products-header" src="" alt="">
+            <img class="products-header" src="img/browser.svg" alt="icon-browser" width="360" height="40">
             <div class="product-info">
               <a href="#">
                 <h3 class="product-title">PINK</h3>
               </a>
-              <img class="products-img" src="img/img-pink.jpeg" width="360" height="576"alt="PINK">
+              <img class="products-img" src="img/img-pink.jpeg" width="360" height="576" alt="PINK">
               <p class="product-desc"></p>
               <a href="#"></a>
             </div>
           </li>
           <li class="product-item">
-            <img class="products-header" src="" alt="">
-             <div class="product-info">
+            <img class="products-header" src="img/browser.svg" alt="icon-browser" width="360" height="40">
+            <div class="product-info">
               <a href="#">
                 <h3 class="product-title">Barbershop</h3>
               </a>
-              <img class="products-img" src="img/img-barbershop.jpeg" width="360" height="576"alt="Barbershop">
+              <img class="products-img" src="img/img-barbershop.jpeg" width="360" height="576" alt="Barbershop">
               <p class="product-desc"></p>
               <a href="#"></a>
             </div>
           </li>
           <li class="product-item">
-            <img class="products-header" src="" alt="">
-             <div class="product-info">
+            <img class="products-header" src="img/browser.svg" alt="icon-browser" width="360" height="40">
+            <div class="product-info">
               <a href="#">
                 <h3 class="product-title">Mishka</h3>
               </a>
-              <img class="products-img" src="img/img-mishka.jpeg" width="360" height="576"alt="Mishka">
+              <img class="products-img" src="img/img-mishka.jpeg" width="360" height="576" alt="Mishka">
               <p class="product-desc"></p>
               <a href="#"></a>
             </div>
           </li>
           <li class="product-item">
-            <img class="products-header" src="" alt="">
-             <div class="product-info">
+            <img class="products-header" src="img/browser.svg" alt="icon-browser" width="360" height="40">
+            <div class="product-info">
               <a href="#">
                 <h3 class="product-title">A+</h3>
               </a>
-              <img class="products-img" src="img/img-aplus.jpeg" width="360" height="576"alt="A+">
+              <img class="products-img" src="img/img-aplus.jpeg" width="360" height="576" alt="A+">
               <p class="product-desc"></p>
               <a href="#"></a>
             </div>
           </li>
           <li class="product-item">
-            <img class="products-header" src="" alt="">
+            <img class="products-header" src="img/browser.svg" alt="icon-browser" width="360" height="40">
             <div class="product-info">
               <a href="#">
                 <h3 class="product-title">KVAST</h3>
               </a>
-              <img class="products-img" src="img/img-kvast.jpeg" width="360" height="576"alt="KVAST">
+              <img class="products-img" src="img/img-kvast.jpeg" width="360" height="576" alt="KVAST">
               <p class="product-desc"></p>
               <a href="#"></a>
             </div>
@@ -125,7 +194,6 @@
       <section class="map">
         <img src="map.jpg" alt="">
         <div class="contacts">
-          <img src="http://placehold.it/150x100">
           <b>NЁRDS DESIGN STUDIO</b>
           <p class="contact-adress">
             191186, Санкт-Петербург,<br>
