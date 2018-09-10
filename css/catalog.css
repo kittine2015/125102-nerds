@@ -8,16 +8,59 @@ body {
   font-weight: 400;
   color: #000000;
 }
+a {
+  text-decoration: none;
+}
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #000000;
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #663d15;
+}
+.main-navigation {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  
+  background-color: lightgray;
+}
+.page-title {
+  text-align: center;
+  font-family: Roboto, Arial, bold;
+  font-size: 36px;
+  padding-bottom: 116px;
+}
+
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a,
+.basket a {
+  color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.basket a:hover,
+.basket a:focus {
+  background-color: rgb(0 0 255);
+}
 
 .filter-item {
   margin: 0;
   padding: 0;
   
   border: none;
-  
-  /* Для демонстрации */
-  width: 260px;
-  margin: 50px auto; 
 }
 
 .range-filter {
@@ -112,4 +155,50 @@ body {
 
 .max-price {
   text-align: right;
+}
+.product-list {
+list-style: none;
+}
+
+.product-item {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+
+ 
+
+.product-title {
+  margin-left: 10px;
+  color: #000000;
+}
+.product-title-button {
+  display: block;
+  width: 200px;
+  padding: 13px 0;
+  
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
+}
+.contact-button {
+  display: block;
+  width: 219px;
+  padding: 12px 0;
+  
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
 }
